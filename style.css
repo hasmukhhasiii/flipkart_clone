@@ -20,7 +20,7 @@ header{
 
 .search-box{
     background-color: #f0f5ff;
-    width: 700px;
+    width: 850px;
     height:35px;
     position: relative;
 }
@@ -39,8 +39,9 @@ header{
 
 .search-box > i{
     position: absolute;
-    top: 0px;
+    top: 8px;
     left: 5px;
+    
 }
 
 .login-button,
@@ -52,11 +53,85 @@ header{
     font-size: 18px;
     margin-right: 30px;
     cursor: pointer;
+    padding-right: 60px;
+    /* background-color: blueviolet; */
+
 }
+
+.fa-ellipsis-vertical{
+
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: none;
+    outline: none;
+    padding:5px;
+}
+
+.Cart-button{
+    position: relative;
+
+    /* margin-right: 200px; */
+    /* background-color: aquamarine; */
+    padding-right: 60px;
+
+}
+
+.login-button{
+    position: relative;
+    /* margin-right: 350px; */
+    /* background-color: red; */
+    padding-right: 60px;
+
+}
+.top-login-option{
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    margin-bottom: 10px;
+    
+}
+.login-dropdown{
+    background-color:white;
+    box-shadow: 0px 0px 5px 2px gainsboro;
+    padding: 10px;
+    text-align: left;
+    z-index: 10;
+    
+
+    position: absolute;
+    top: 20px;
+    left:0px;
+    width: 250px;
+    display: none;
+    visibility: hidden;
+
+}
+
+.body-login-dropdown >p{
+    margin-top: 15px;
+    transition: 0.5s;
+
+}
+
+.body-login-dropdown >p:hover{
+    color: blue;
+    background-color:rgb(221, 221, 212)
+}
+
+.login-button:hover .login-dropdown{
+    display: block;
+    visibility: visible;
+}
+
 .dot-menu{
     border: none;
     background-color: white;
     position: relative;
+    z-index: 10;
+    /* padding-left: 200px; */
+    padding-right: 50px;
+
 }
 
 .dot-menu-dropdown{
@@ -91,55 +166,6 @@ header{
     visibility: visible;
 }
 
-.fa-ellipsis-vertical{
-
-    border: none;
-    outline: none;
-    box-shadow: none;
-    background: none;
-    outline: none;
-}
-
-.login-button{
-    position: relative;
-}
-.top-login-option{
-    display: flex;
-    justify-content: space-between;
-    border: none;
-    margin-bottom: 10px;
-}
-.login-dropdown{
-    background-color:white;
-    box-shadow: 0px 0px 5px 2px gainsboro;
-    padding: 10px;
-    text-align: left;
-    
-
-    position: absolute;
-    top: 20px;
-    left:0px;
-    width: 250px;
-    display: none;
-    visibility: hidden;
-
-}
-
-.body-login-dropdown >p{
-    margin-top: 15px;
-    transition: 0.5s;
-
-}
-
-.body-login-dropdown >p:hover{
-    color: blue;
-    background-color:rgb(221, 221, 212)
-}
-
-.login-button:hover .login-dropdown{
-    display: block;
-    visibility: visible;
-}
 
 #banner1{
     background-color: white;
