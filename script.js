@@ -35,4 +35,16 @@
         document.querySelector(".slider-container").addEventListener("mouseleave", () => {
             autoSlide = setInterval(autoPlay, 3000);
         });
+        
+        // function scrollProducts(scrollValue) {
+        //     document.getElementById("productList").scrollLeft += scrollValue;
+        // }
+
+        let scrollAmount = 0;
+        function scrollCarousel(direction) {
+            const container = document.getElementById('carouselItems');
+            const scrollStep = 200;
+            scrollAmount += direction * scrollStep;
+            container.style.transform = `translateX(${-scrollAmount}px)`;
+        }
   
