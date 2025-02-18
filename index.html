@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style.css">
 
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -26,7 +27,7 @@
                     <i class="fa-solid fa-angle-down"></i>
                     <div class="login-dropdown">
                         <div class="top-login-option">
-                            <a href="#">New Customer ?</a>
+                            <a href="./second.html">New Customer ?</a>
                             <a href="#">Sign Up</a>
                         </div>
                         <hr>
@@ -114,15 +115,16 @@
             <p>Applications</p>
         </div>
         <div class="b1">
-            <img src="./Flipkart_clone_images/grocery.png" alt="grocery">
-            <p>Grocery</p>
+            <img src="./Flipkart_clone_images/travel.png" alt="Flight Bookings">
+            <p>Flight Booking</p>
         </div>
         <div class="b1">
-            <img src="./Flipkart_clone_images/grocery.png" alt="grocery">
-            <p>Grocery</p>
+            <img src="./Flipkart_clone_images/beautyToys.png" alt="Beauty,Toys & More">
+            <p>Beauty & Toys</p>
+            
         </div>
         <div class="b1">
-            <img src="./Flipkart_clone_images/grocery.png" alt="grocery">
+            <img src="./Flipkart_clone_images/twowheelers.png" alt="two wheeler">
             <p>Grocery</p>
         </div>
 
@@ -132,119 +134,30 @@
         <div class="slide-wrapper">
         <div class="slider-container">
             <div class="slider">
+                
                 <div class="slide"><img src="./Flipkart_clone_images/banner1.jpg" alt="Slide 1"></div>
                 <div class="slide"><img src="./Flipkart_clone_images/banner2.jpg" alt="Slide 2"></div>
                 <div class="slide"><img src="./Flipkart_clone_images/banner3.jpeg" alt="Slide 3"></div>
                 <div class="slide"><img src="./Flipkart_clone_images/banner4.jpg" alt="Slide 3"></div>
                 <div class="slide"><img src="./Flipkart_clone_images/banner4.jpg" alt="Slide 3"></div>
             </div>
-            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            <button  style="background-color: red;" class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button style="background-color: red;" class="next" onclick="moveSlide(1)">&#10095;</button>
         </div>
         </div>
     
     </section>
     
-        <!-- <section style="padding: 40px;">
-
-            <div class="s1">
-                <div class="s1-top">
-                    <h1 class="s1-title">Best of Electronics</h1>
-                    <button class="view-button">view more</button>
-                </div>
-                <hr>
-                <button class="scroll-btn left" onclick="scrollLeft()">&#10094;</button>
-                <div class="s1-products-container">
-                    <div class="s1-products">
-                        <div class="product">
-                            <img src="./Flipkart_clone_images/printer.png" alt="printer">
-                            <p>Printers</p>
-                            <h4>From ₹20,000</h4>
-                        </div>
-                        <div class="product">
-                            <img src="./Flipkart_clone_images/projector.png" alt="projector">
-                            <p>Printers</p>
-                            <h4>From ₹20,000</h4>
-                        </div>
-                        <div class="product">
-                            <img src="./Flipkart_clone_images/Picture.png" alt="shaver">
-                            <p>Printers</p>
-                            <h4>From ₹20,000</h4>
-                        </div>
-                        <div class="product">
-                            <img src="./Flipkart_clone_images/monitor1.webp" alt="monitor">
-                            <p>Printers</p>
-                            <h4>From ₹20,000</h4>
-                        </div>
-                        <div class="product">
-                            <img src="./Flipkart_clone_images/smartwatch.png" alt="smartwatch">
-                            <p>Printers</p>
-                            <h4>From ₹20,000</h4>
-                        </div>
-                        <div class="product">
-                            <img src="./Flipkart_clone_images/smartwatch.png" alt="smartwatch">
-                            <p>Printers</p>
-                            <h4>From ₹20,000</h4>
-                        </div>
-                        <div class="product">
-                            <img src="./Flipkart_clone_images/smartwatch.png" alt="smartwatch">
-                            <p>Printers</p>
-                            <h4>From ₹20,000</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <button class="scroll-btn right" onclick="scrollRight()">&#10095;</button>
 
 
-            </div>
-            
-        </section> -->
 
 
-        <!-- <div class="electronics-section">
-            <h2>Best of Electronics</h2>
-            <div class="electronics-container">
-                <button class="scroll-btn left-btn" onclick="scrollProducts(-200)">&#10094;</button>
-                <div class="product-list" id="productList">
-                    <div class="product">
-                        <img src="./Flipkart_clone_images/earphon1.webp" alt="Earbuds">
-                        <h4>Best TrueWireless</h4>
-                        <p>From ₹999</p>
-                    </div>
-                    <div class="product">
-                        <img src="smartwatch.png" alt="Smartwatch">
-                        <h4>boAt Smartwatches</h4>
-                        <p>From ₹999</p>
-                    </div>
-                    <div class="product">
-                        <img src="monitor.png" alt="Monitor">
-                        <h4>Monitors</h4>
-                        <p>From ₹7949</p>
-                    </div>
-                    <div class="product">
-                        <img src="speaker.png" alt="Speaker">
-                        <h4>Best Mobile Speaker</h4>
-                        <p>From ₹499</p>
-                    </div>
-                    <div class="product">
-                        <img src="projector.png" alt="Projector">
-                        <h4>Projectors</h4>
-                        <p>From ₹9999</p>
-                    </div>
-                    <div class="product">
-                        <img src="benq-monitor.png" alt="BenQ Monitor">
-                        <h4>BenQ Monitors</h4>
-                        <p>From ₹9990</p>
-                    </div>
-                </div>
-                <button class="scroll-btn right-btn" onclick="scrollProducts(200)">&#10095;</button>
-            </div>
-        </div> -->
+
+
         <div class="main-wrapper">
             <div class="container" >
-                <div class="section-title">Best of Electronics</div>
-                <div class="wrapper">
+                <div  class="section-title">Best of Electronics</div>
+                
                     <div class="carousel">
                         <button class="arrow left" onclick="scrollCarousel(-1)">&#8249;</button>
                         
@@ -260,55 +173,56 @@
                             <div class="item">
                                 <img src="./Flipkart_clone_images/smartwatch.png" alt="Smartwatch">
                                 <br>Smartwatches<br>
-                                <h4>From ₹999</h4>
+                                <h4>From ₹1999</h4>
                                 <hr>
                             </div>
-                            <!-- <div class="">
-                                <img src="./Flipkart_clone_images/projector.png" alt="Monitor">
-                                <br>Monitors<br>
-                                <h4>From ₹999</h4>
-                                <hr>
-                            </div> -->
+
                             <div class="item">
                                 <img src="./Flipkart_clone_images/earphone2.jpg" alt="Speaker">
                                 <br>Mobile Speaker<br>
-                                <h4>From ₹999</h4>
+                                <h4>From ₹1599</h4>
                                 <hr>
                             </div>
                             <div class="item">
                                 <img src="./Flipkart_clone_images/projector.png" alt="Projector">
                                 <br>Projectors<br>
-                                <h4>From ₹999</h4>
+                                <h4>From ₹2999</h4>
                                 <hr>
                             </div>
                             <div class="item">
-                                <img src="./Flipkart_clone_images/station.png" alt="Projector">
-                                <br>Projectors<br>
-                                <h4>From ₹999</h4>
+                                <img src="./Flipkart_clone_images/elec.webp" alt="Laptops">
+                                <br>Laptops<br>
+                                <h4>From ₹49999</h4>
                                 <hr>
                             </div>
                             <div class="item">
-                                <img src="./Flipkart_clone_images/projector.png" alt="Projector">
-                                <br>Projectors<br>
-                                <h4>From ₹999</h4>
+                                <img src="./Flipkart_clone_images/camera.png" alt="Camera">
+                                <br>Camera<br>
+                                <h4>From ₹399999</h4>
                                 <hr>
                             </div>
                             <div class="item">
-                                <img src="./Flipkart_clone_images/projector.png" alt="Projector">
-                                <br>Projectors<br>
-                                <h4>From ₹999</h4>
+                                <img src="./Flipkart_clone_images/Picture.png" alt="Shaver">
+                                <br>Shaver<br>
+                                <h4>From ₹1599</h4>
+                                <hr>
+                            </div>
+                            <div class="item" >
+                                <img class="item-car" src="./Flipkart_clone_images/remotecontrolcar.png" alt="Remote Car">
+                                <br>Remote Car<br>
+                                <h4>From ₹2999</h4>
                                 <hr>
                             </div>
                             <div class="item">
-                                <img src="./Flipkart_clone_images/projector.png" alt="Projector">
-                                <br>Projectors<br>
-                                <h4>From ₹999</h4>
+                                <img src="./Flipkart_clone_images/vivo-mobile-phone-1000x1000.webp" alt="Smart Phones">
+                                <br>Smart Phones<br>
+                                <h4>From ₹7999</h4>
                                 <hr>
                             </div>
                             <div class="item">
-                                <img src="./Flipkart_clone_images/projector.png" alt="Projector">
-                                <br>Projectors<br>
-                                <h4>From ₹999</h4>
+                                <img src="./Flipkart_clone_images/vivo-mobile-phone-1000x1000.webp" alt="Smart Phones">
+                                <br>Smart Phones<br>
+                                <h4>From ₹7999</h4>
                                 <hr>
                             </div>
                         </div>
@@ -317,7 +231,7 @@
 
                     </div>
 
-                </div>
+                
                 
             </div>
             <div class="offer">
@@ -325,125 +239,61 @@
             </div>
         </div>
 
-    <!-- <section style="padding: 40px;">
 
-        <div class="main-wrapper2" style="background-color: aqua;">
-            <div class="container2" style="background-color: blanchedalmond;">
-                <div class="section2-title" style="background-color: blueviolet;">Beauty,Food,Toys & More</div>
-                    <div class="wrapper2">
-                        <div class="carousel2">
-                            <div class="s2-products">
-                                <div class="product">
-                                    <img src="./Flipkart_clone_images/station.png" alt="">
-                                    <p>Stationary</p>
-                                    <h4>Under 499</h4>
-                                    <hr>
-                                </div>
-                                <div class="product">
-                                    <img src="./Flipkart_clone_images/station.png" alt="">
-                                    <p>Stationary</p>
-                                    <h4>Under 499</h4>
-                                    <hr>
-                                </div>
-                                <div class="product">
-                                    <img src="./Flipkart_clone_images/station.png" alt="">
-                                    <p>Stationary</p>
-                                    <h4>Under 499</h4>
-                                    <hr>
-                                </div>
-                                <div class="product">
-                                    <img src="./Flipkart_clone_images/station.png" alt="">
-                                    <p>Stationary</p>
-                                    <h4>Under 499</h4>
-                                    <hr>
-                                </div>
-                                <div class="product">
-                                    <img src="./Flipkart_clone_images/station.png" alt="">
-                                    <p>Stationary</p>
-                                    <h4>Under 499</h4>
-                                    <hr>
-                                </div>
-                                <div class="product">
-                                    <img src="./Flipkart_clone_images/station.png" alt="">
-                                    <p>Stationary</p>
-                                    <h4>Under 499</h4>
-                                    <hr>
-                                </div>
-                                
-                    
-                    
-                            </div>
-
-                        </div>
-
-
-    
-                    </div>
-    
-    
-    
-    
-            </div>
-
-        </div>
-
-
-
-
-
-    </section> -->
 
     <div class="container2" >
         <div class="section-title2">Beauty,Food,Toys & More</div>
         <div class="s2-products">
             <div class="product">
-                <img src="./Flipkart_clone_images/station.png" alt="">
+                <img src="./Flipkart_clone_images/station.png" alt="Stationary">
                 <p>Stationary</p>
-                <h4>Under 499</h4>
+                <h4>Under ₹499</h4>
                 <hr>
             </div>
             <div class="product">
-                <img src="./Flipkart_clone_images/station.png" alt="">
-                <p>Stationary</p>
-                <h4>Under 499</h4>
+                <img src="./Flipkart_clone_images/cycle.png" alt="Cycle">
+                <p>Geared Cycle</p>
+                <h4>Under ₹9999</h4>
                 <hr>
             </div>
             <div class="product">
-                <img src="./Flipkart_clone_images/station.png" alt="">
-                <p>Stationary</p>
-                <h4>Under 499</h4>
+                <img src="./Flipkart_clone_images/dryfruit.png" alt="dryfruit">
+                <p>Dry Fruits</p>
+                <h4>Under ₹999</h4>
                 <hr>
             </div>
             <div class="product">
-                <img src="./Flipkart_clone_images/station.png" alt="">
-                <p>Stationary</p>
-                <h4>Under 499</h4>
+                <img src="./Flipkart_clone_images/globe.png" alt="Globe">
+                <p>Globe</p>
+                <h4>Under ₹499</h4>
                 <hr>
             </div>
             <div class="product">
-                <img src="./Flipkart_clone_images/station.png" alt="">
-                <p>Stationary</p>
-                <h4>Under 499</h4>
+                <img src="./Flipkart_clone_images/cloth1.webp" alt=" Women Casuals">
+                <p>Women Casuals</p>
+                <h4>Under ₹1999</h4>
                 <hr>
             </div>
             <div class="product">
-                <img src="./Flipkart_clone_images/station.png" alt="">
-                <p>Stationary</p>
-                <h4>Under 499</h4>
+                <img src="./Flipkart_clone_images/cloth4.webp" alt="summerwear">
+                <p>Summer Wear</p>
+                <h4>Under ₹999</h4>
                 <hr>
             </div>
             <div class="product">
-                <img src="./Flipkart_clone_images/station.png" alt="">
-                <p>Stationary</p>
-                <h4>Under 499</h4>
+                <img src="./Flipkart_clone_images/fk-default-image-75ff340b.png" alt="couple Wear">
+                <p>Couple Wear</p>
+                <h4>Under ₹2999</h4>
                 <hr>
             </div>
-
-            
-
-
+            <div class="product">
+                <img src="./Flipkart_clone_images/zoom_0-1582554726.webp" alt="Menswear">
+                <p>Menswear</p>
+                <h4>Under ₹799</h4>
+                <hr>
+            </div>
         </div>
-        <button class="arrow right" onclick="scrollCarousel(1)">&#8250;</button>
+        <!-- <button class="arrow right" onclick="scrollCarousel(1)">&#8250;</button> -->
         
     </div>
 
@@ -571,8 +421,13 @@
                 </div>
                 <div class="social">
                     <h4>Social</h4>
-                    <div>
+                    <div class="icons">
                         <!-- four icons of sovialmedia -->
+                        <span class="iconify" data-icon="mdi:facebook" style="font-size: 20px; color: azure;"></span>
+                        <span class="iconify" data-icon="mdi:twitter" style="font-size: 20px; color: azure;"></span>
+                        <span class="iconify" data-icon="mdi:youtube" style="font-size: 20px; color: azure;"></span>
+                        <span class="iconify" data-icon="mdi:instagram" style="font-size: 20px; color: azure;"></span>
+                        
                     </div>
                 </div>
     
@@ -597,16 +452,26 @@
 
             </div>
         </div>
-        <div class="bottom-footer">
-            <div>
+        <div  class="bottom-footer">
+            <div class="bottom-footer-icons">
+               
+                <span class="iconify" data-icon="solar:shop-2-outline" style="font-size: 20px; color: gold;"></span>
                 <a href="#">Become a Seller</a>
+                <span class="iconify" data-icon="ph:shooting-star" style="font-size: 20px; color: gold;"></span>
                 <a href="#">Advertise</a>
+                <span class="iconify" data-icon="ph:gift-thin" style="font-size: 20px; color: gold;"></span>
                 <a href="#">Gift Card</a>
+                <span class="iconify" data-icon="mage:question-mark-circle" style="font-size: 20px; color: gold;"></span>
                 <a href="#">Help Center</a>
                 <a href="#">© 2007-2025 Flipkart.com</a>
                 <a href="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg"></a>
                 
             </div>
+
+            <div  class="banking">
+                <img src="./Flipkart_clone_images/Screenshot 2025-02-18 122302.png" alt="banking ptions">
+            </div>
+            
 
         </div>
     </footer>

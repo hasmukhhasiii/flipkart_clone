@@ -1,5 +1,5 @@
 
-        let currentIndex = 0;
+        // let currentIndex = 0;
         const slides = document.querySelectorAll(".slide");
         const slider = document.querySelector(".slider");
         const totalSlides = slides.length;
@@ -25,7 +25,7 @@
             moveSlide(1);
         }
 
-        let autoSlide = setInterval(autoPlay, 3000); // Change every 3 seconds
+        let autoSlide = setInterval(autoPlay, 2000); // Change every 3 seconds
 
         // Pause autoplay on hover
         document.querySelector(".slider-container").addEventListener("mouseenter", () => {
@@ -36,15 +36,25 @@
             autoSlide = setInterval(autoPlay, 3000);
         });
         
-        // function scrollProducts(scrollValue) {
-        //     document.getElementById("productList").scrollLeft += scrollValue;
-        // }
+        
 
-        let scrollAmount = 0;
+        let currentIndex = 0; // Track the current index of the visible item
+        const items = document.getElementById('carouselItems');
+        const totalItems = items.children.length; // Total number of items
+        const itemWidth = 180;
         function scrollCarousel(direction) {
-            const container = document.getElementById('carouselItems');
-            const scrollStep = 200;
-            scrollAmount += direction * scrollStep;
-            container.style.transform = `translateX(${-scrollAmount}px)`;
+            // Calculate the new index
+            currentIndex += direction;
+        
+            // Prevent scrolling beyond the first or last item
+            if (currentIndex < 0) {
+                currentIndex = 0; // Stay at the first item
+            } else if (currentIndex > totalItems - 1) {
+                currentIndex = totalItems - 1; // Stay at the last item
+            }
+        
+            // Calculate the new transform value
+            const offset = -currentIndex * itemWidth; // Move left by the width of the items
+            items.style.transform = `translateX(${offset}px)`; // Apply the transform
         }
   

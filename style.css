@@ -2,10 +2,14 @@
     padding: 0;
     margin:0;
     box-sizing: border-box;
+    
+  
 }
 
 body{
     background-color: whitesmoke;
+    overflow-y: hidden;
+    
 }
 
 header{
@@ -166,9 +170,15 @@ header{
     visibility: visible;
 }
 
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
 
 #banner1{
-    background-color: white;
+    background-color:white;
     display: flex;
     justify-content: space-between;
     padding: 10px 25px;
@@ -178,6 +188,7 @@ header{
 
 #banner1 img{
     width: 70px;
+    z-index: 9;
 }
 
 .slide-wrapper{
@@ -186,10 +197,11 @@ header{
     background-color: white;
 }
 .slider-container {
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
+    /* width: 100%; */
+    /* max-width: 100%; */
+    overflow-x: hidden;
     position: relative;
+    overflow: hidden;
     
 }
 
@@ -221,10 +233,16 @@ header{
     padding: 10px;
     cursor: pointer;
     font-size: 18px;
+    z-index: 10;   
+    visibility: hidden;
 }
 
-.prev { left: 10px; }
-.next { right: 10px; }
+.prev {
+     left: 10px;
+     }
+.next {
+     right: 10px;
+     }
 
 /* .s1-products-container {
     overflow-x: auto;
@@ -345,7 +363,7 @@ header{
     margin: 20px;
     padding: 20px;
     border-radius: 5px;
-    width: 80%;
+    width: 110%;
     height: 350px;
     
     
@@ -381,14 +399,22 @@ header{
 .item img {
     margin-top: 20p;
     width: 150px;
-    height: auto;
+    height: 150px;
     
 }
+
 
 .item img:hover {
     transform: scale(1.1); /* Shrinks the image to 90% of its size */
 }
 
+.product img:hover {
+    transform: scale(1.1);
+}
+
+.b1 img:hover {
+    transform: scale(1.1);
+}
 
 .arrow {
     position: absolute;
@@ -413,12 +439,13 @@ header{
     
     width: 250px;
     margin-top: 10px;
-    margin-right: 20px;
+    margin-right: 50px;
+    margin-left: 1px;
     height: fit-content;
 }
 
 .offer >img{
-    width: 100%;
+    width: 120%;
     
 }
 
@@ -432,12 +459,13 @@ header{
 
 .container2{
 
-    background-color: white;
+    background-color:white;
     margin: 20px;
     padding: 20px;
     border-radius: 5px;
     width: 100%;
     height: 350px;
+    
 
 }
 .section-title2{
@@ -454,13 +482,14 @@ header{
     height: 200px;
     margin-top: 60px;
     gap: 40px;
+    justify-content: space-around;
 }
 
 .s2-products img{
 
     margin-top: 20p;
     width: 180px;
-    height: auto;
+    height: 170px;
 
 }
 
@@ -472,11 +501,13 @@ footer{
     display:flex;
     flex-wrap: wrap;
     gap:10px;
+    margin-bottom: 40px;
 }
 
 .badge{
     
     flex-basis: 13%;
+    margin-left: 20px;
     
 }
 
@@ -504,7 +535,7 @@ footer a {
 
 .badge1 p, .badge2 p {
     color: white;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .border{
@@ -522,12 +553,35 @@ footer i{
 .social{
     margin-top: 20px;
 }
+
+
+
 .bottom-footer{
     display:flex;
-    gap: 40px;
+    gap: 330px;
     margin-top:20px;
     border-top-width: 1px;
     border-top-style: solid;
     border-top-color:white;
+    
+    height: 50px;
 
 }
+.icons{
+
+    margin-top: 6px;
+    display: flex;
+    gap: 15px;
+    
+
+}
+
+.bottom-footer-icons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+
